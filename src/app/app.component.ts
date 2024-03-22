@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { coffee } from './interfaces/coffee.interface';
+import { ListerApiService } from './services/lister-api/lister-api.service';
 
 @Component({
   selector: 'app-root',
@@ -11,25 +11,8 @@ import { coffee } from './interfaces/coffee.interface';
   styleUrl: './app.component.css',
 })
 export class AppComponent implements OnInit {
+  constructor(public listerApiService: ListerApiService) {}
   ngOnInit(): void {
-    this.getList();
-  }
-  coffeeList: coffee[] = [];
-
-  // API
-
-  public async getList() {
-    const baseUrl: string =
-      'https://raw.githubusercontent.com/devchallenges-io/web-project-ideas/main/front-end-projects/data/simple-coffee-listing-data.json';
-    await fetch(baseUrl)
-      .then((response) => response.json())
-      .then((data) => {
-        data.forEach((element: any) => {
-          this.coffeeList.push(element);
-        });
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+    this.listerApiService.getList();
   }
 }

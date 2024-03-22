@@ -14,10 +14,14 @@
     <title>Challenge 1</title>
   </head>
   <body>
-    <div>
-      <img class="bg-cafe" src="../assets/bg-cafe.jpg" alt="cafeteriaBanner" />
-    </div>
     <div class="container">
+      <div class="imgCoffee">
+        <img
+          class="bg-cafe"
+          src="../assets/bg-cafe.jpg"
+          alt="cafeteriaBanner"
+        />
+      </div>
       <div class="coffeeContainer">
         <h1>Our Collection</h1>
         <div class="container">
@@ -36,7 +40,7 @@
         </span>
 
         <div class="box">
-          <div *ngFor="let coffee of coffeeList" class="card">
+          <div *ngFor="let coffee of listerApiService.coffeeList" class="card">
             <!-- <h4 *ngIf="coffee.popular">
           <small class="popular">{{ coffee.popular }}</small>
         </h4> -->
