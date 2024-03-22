@@ -13,6 +13,10 @@ body {
   background: #1b1d1f;
 }
 
+.greyP {
+  color: #6f757c;
+}
+
 .bg-cafe {
   width: 100%;
   height: auto;
