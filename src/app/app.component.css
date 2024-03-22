@@ -45,9 +45,10 @@ body {
   /* background-color: #1b1d1f; */
   border-radius: 10px;
   width: 100%;
+  transform: translate(1%, -20%);
   /* ccc */
   /* position: absolute;
-  z-index: 2; */
+  z-index: 2;  */
 }
 
 .coffeeContainer {
