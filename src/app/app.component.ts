@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { coffee } from './interfaces/coffee.interface';
 
@@ -10,12 +10,15 @@ import { coffee } from './interfaces/coffee.interface';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
+  ngOnInit(): void {
+    this.getList();
+  }
   coffeeList: coffee[] = [];
 
   // API
 
-  async getList() {
+  public async getList() {
     const baseUrl: string =
       'https://raw.githubusercontent.com/devchallenges-io/web-project-ideas/main/front-end-projects/data/simple-coffee-listing-data.json';
     await fetch(baseUrl)
