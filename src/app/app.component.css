@@ -45,7 +45,7 @@ body {
   /* background-color: #1b1d1f; */
   border-radius: 10px;
   width: 100%;
-  transform: translate(1%, -20%);
+
   /* ccc */
   /* position: absolute;
   z-index: 2;  */
@@ -108,6 +108,9 @@ footer {
   .box {
     justify-content: center;
   }
+  .container {
+    transform: translate(1%, -3%);
+  }
 }
 
 @media screen and (min-width: 1020px) {
@@ -122,11 +125,19 @@ footer {
     justify-content: flex-start;
     padding-left: 100px;
   }
+
+  .container {
+    transform: translate(1%, -20%);
+  }
 }
 
 @media screen and (min-width: 1440px) {
   .box {
     justify-content: flex-start;
     padding-left: 150px;
+  }
+
+  .container {
+    transform: translate(1%, -20%);
   }
 }
