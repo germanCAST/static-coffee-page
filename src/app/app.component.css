@@ -1,0 +1,78 @@
+html {
+  background: #111315;
+  border: red;
+}
+
+body {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-cafe {
+  width: 100%;
+  height: auto;
+}
+
+.imgcard {
+  border-radius: 10px;
+}
+
+.bg {
+  background-color: red;
+}
+
+.container {
+  color: white;
+  align-items: center;
+  text-align: center;
+  background-color: #1b1d1f;
+  border-radius: 10px;
+  width: 90%;
+  /* ccc */
+  position: absolute;
+  z-index: 2;
+  top: 6em;
+}
+
+.beanRow {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.bean {
+  border-radius: 3px;
+  border: #6f757c;
+  background-color: #6f757c;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: center;
+  align-content: center;
+  column-gap: 25px;
+  width: 100%;
+}
+
+.popular {
+  z-index: 10;
+  color: red;
+}
+
+@media screen and (min-width: 340px) {
+  .box {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .box {
+    justify-content: flex-start;
+    padding-left: 50px;
+  }
+}
