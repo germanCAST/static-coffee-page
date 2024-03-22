@@ -1,13 +1,16 @@
 html {
-  background: #111315;
-  border: red;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 body {
+  z-index: 1;
   display: flex;
   align-content: center;
   justify-content: center;
   align-items: center;
+  background: #1b1d1f;
 }
 
 .bg-cafe {
