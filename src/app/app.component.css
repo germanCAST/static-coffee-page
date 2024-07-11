@@ -18,12 +18,12 @@ body {
 .greyP {
   width: 50%;
   justify-content: center;
-  color: #6f757c;
+  color: #d9e5f1;
 }
 
 .bg-cafe {
   width: 100%;
-  height: auto;
+  height: 200px;
 }
 
 .imgcard {
@@ -40,16 +40,11 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  color: white;
+  color: #ffffff;
   align-items: center;
   text-align: center;
-  /* background-color: #1b1d1f; */
   border-radius: 10px;
   width: 100%;
-
-  /* ccc */
-  /* position: absolute;
-  z-index: 2;  */
 }
 
 .coffeeContainer {
@@ -58,8 +53,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-
-  color: white;
+  color: #b65506;
   align-items: center;
   text-align: center;
   background-color: #1b1d1f;

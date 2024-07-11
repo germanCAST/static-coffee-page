@@ -29,31 +29,17 @@
         </div>
 
         <span class="beanRow">
-          <button>
-            <a
-              routerLink="/addCoffee"
-              routerLinkActive="active"
-              ariaCurrentWhenActive="page"
-              >Go</a
-            >
-          </button>
-          <button>
-            <h3 class="bean">All Products</h3>
-          </button>
-          <h3 class="bean">Available Now</h3>
+          <h3 class="" style="color: white">Available Now</h3>
         </span>
 
         <div class="box">
           <div *ngFor="let coffee of listerApiService.coffeeList" class="card">
-            <!-- <h4 *ngIf="coffee.popular">
-          <small class="popular">{{ coffee.popular }}</small>
-        </h4> -->
             <img class="imgcard" src="{{ coffee.image }}" alt="coffe" />
             <h3>{{ coffee.name }}</h3>
-            <p *ngIf="coffee.rating; else noRating">
+            <p *ngIf="coffee.rating; else noRating" style="color: white">
               <svg
-                width="18"
-                height="18"
+                width="14"
+                height="14"
                 viewBox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -68,7 +54,7 @@
               {{ coffee.rating }} ({{ coffee.votes }}) votes
             </p>
             <ng-template #noRating>
-              <p>
+              <p style="color: white">
                 <svg
                   width="18"
                   height="18"
